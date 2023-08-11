@@ -19,53 +19,53 @@ const db = getFirestore(app);
 
 
 
-// let btn = document.getElementById('register');
+let btn = document.getElementById('register');
 
-// btn.addEventListener('click', () => {
-//     let name = document.getElementById('name')
-//     let email = document.getElementById('email')
-//     let number = document.getElementById('number')
-//     let password = document.getElementById('password')
+btn.addEventListener('click', () => {
+    let name = document.getElementById('name')
+    let email = document.getElementById('email')
+    let number = document.getElementById('number')
+    let password = document.getElementById('password')
 
-//     let userData = {
-//         name: name.value,
-//         password: password.value,
-//         email: email.value,
-//         number: number.value
-//     }
-//     // console.log(userData);
+    let userData = {
+        name: name.value,
+        password: password.value,
+        email: email.value,
+        number: number.value
+    }
+    // console.log(userData);
 
-//     createUserWithEmailAndPassword(auth, userData.email, userData.password)
-//         .then(async (userCredential) => {
-//             const user = userCredential.user;
-//             try {
-//                 const docRef = await addDoc(collection(db, "users"), {
-//                     ...userData,
-//                     uid: user.uid
+    createUserWithEmailAndPassword(auth, userData.email, userData.password)
+        .then(async (userCredential) => {
+            const user = userCredential.user;
+            try {
+                const docRef = await addDoc(collection(db, "users"), {
+                    ...userData,
+                    uid: user.uid
 
-//                 });
-//                 console.log("Document written with ID: ", docRef.id);
-//             } catch (e) {
-//                 console.error("Error adding document: ", e);
-//             }
+                });
+                console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
 
-//         })
-//         .catch((error) => {
-//             const errorCode = error.code;
-//             const errorMessage = error.message;
-//             console.log(errorMessage);
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorMessage);
 
-//         });
+        });
 
-// })
+})
 
-// // let read = async () => {
-// //     const querySnapshot = await getDocs(collection(db, "users"));
-// //     querySnapshot.forEach((doc) => {
-// //         console.log(`${doc.id} =>`, doc.data());
-// //     });
-// // }
-// // read ()
+// let read = async () => {
+//     const querySnapshot = await getDocs(collection(db, "users"));
+//     querySnapshot.forEach((doc) => {
+//         console.log(`${doc.id} =>`, doc.data());
+//     });
+// }
+// read ()
 
 let updateBtn = document.getElementById('update')
 updateBtn.addEventListener('click', async () => {

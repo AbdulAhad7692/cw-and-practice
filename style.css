@@ -1,914 +1,215 @@
-.bg-img {
-    background-image: url(imaes/1000px.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
 }
 
-.nav-content {
-    background-color: rgb(0, 0, 0);
-    color: white;
+nav {
     display: flex;
-    height: 70px;
-    width: 1500px;
-    border-radius: 20px;
     justify-content: space-evenly;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-}
-
-.nav-mobile {
-    display: none;
-}
-
-.nav-text {
-    margin-top: 20px;
-    transition: .3s;
-}
-
-.nav-text:hover {
-    color: orange;
-}
-
-.form {
-    height: 30px;
-    width: 200px;
-    background-color: rgb(24, 24, 24);
-    border-radius: 10px;
-    margin-top: 2%;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-}
-
-#t-content {
-    line-height: 5px;
-    margin-left: 10%;
-    color: white;
-    font-size: 72px;
-    display: flex;
-}
-
-.wallet {
-    height: 60px;
-    width: 210px;
-    border-radius: 25px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
+    background-color: #69503d;
+    height: 40px;
     align-items: center;
 }
 
-.wallet {
-    margin-left: 40%;
+.nav-img {
+    height: 20px;
+    padding: 10px;
 }
 
-.wallet-im {
-    justify-content: left;
+.nav-text {
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-.wallet-im2 {
-    justify-content: right;
-}
-
-.wallet-box {
-    height: 50px;
-    width: 150px;
-    border: none;
+.left-side {
     display: flex;
-    border-radius: 25px;
+    align-items: center;
 }
 
-.about-nft {
-    background-color: rgb(255, 0, 0);
-    width: 100%;
-    height: 700px;
-    background-image: url(imaes/2nd.jpg);
+.dropdown {
+    background-color: #69503d;
+    color: white;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.below-nav {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 25px;
+}
+
+.anchors {
+    padding: 10px;
+}
+
+.anchor-styling {
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+    margin: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+.anchor-styling:hover {
+    color: #69503d;
+}
+
+.btn {
+    background-color: #69503d;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.body-stuff {
+    height: 80vh;
+    background-image: url(image/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    background-position: top;
 }
 
-.line {
-    height: 10px;
-    width: 100%;
-    background-color: black;
+.body-content {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(0, 212, 255, 0) 100%);
+    height: 80vh;
+    padding: 5% 15%;
 }
 
-.headin3 {
-    color: rgb(255, 255, 255);
-    margin-top: 0%;
-    font-size: 72px;
-    font-family: Georgia, Times, 'Times New Roman', serif
+.text {
+    color: rgb(226, 199, 62);
+    font-weight: bold;
+    padding-bottom: 18px;
 }
 
-.mid-content {
-    display: flex;
-    justify-content: space-evenly;
+.heading {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(0, 0, 66);
+    line-height: 46px;
 }
 
-#p1 {
-    font-size: 40px;
-    color: yellow;
-}
-
-.cards {
-    background: rgb(82, 0, 255);
-    background: linear-gradient(0deg, rgb(15, 3, 126) 0%, rgb(5, 19, 88) 50%, rgb(8, 8, 14) 100%);
-    height: 240px;
-    width: 100%;
-}
-
-.card1 {
-    margin-top: 20px;
-    background-color: rgb(9, 6, 27);
-    height: 170px;
-    width: 300px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-color: rgb(78, 78, 78);
-    transition: all .3s ease;
-}
-
-.card1:hover {
-    border-color: white;
-}
-
-.card-alignment {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.avatars {
-    border-radius: 50px;
-    height: 100px;
-    margin-top: 40px;
-}
-
-.div-text {
-    margin-top: 50px;
-    margin-left: 10px;
-}
-
-.card-text {
-    color: white;
-    font-size: 20px;
-    line-height: 0.5px;
-}
-
-.items-alignment {
-    background-color: rgb(2, 3, 23);
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-.items-2 {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.items-2p {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.items-card {
-    background: rgb(77, 48, 136);
-    background: radial-gradient(circle, rgba(77, 48, 136, 1) 14%, rgba(72, 0, 130, 1) 100%);
-    height: 430px;
-    width: 250px;
-    border-radius: 15px;
-    margin-left: 50px;
-}
-
-.adi {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.items-content {
-    display: flex;
-}
-
-.items-content>p {
+.text-bottom {
+    color: rgb(143, 143, 143);
+    font-size: 12px;
     padding-top: 10px;
-    margin-left: 10px;
-    color: white;
-
+    line-height: 20px;
 }
 
-.it-im {
-    width: 220px;
-    margin: 15px;
-    border-radius: 10px;
+.text-div {
+    width: 50%;
 }
 
-.bid {
-    color: white;
-    font-size: 20px;
-    margin-top: 0%;
-}
-
-.bid-t {
-    display: flex;
-    justify-content: space-around;
-}
-
-.imm {
-    border-radius: 45px;
-    height: 30px;
-    margin-left: 20px;
-    transition: all .7s ease;
-    cursor: pointer;
-}
-
-.d-2 {
-    display: flex;
-}
-
-.imm:hover {
-    opacity: 0.7;
-    transform: scale(1.05);
-}
-
-.bg-2 {
-    background-color: rgb(2, 3, 23);
-    width: 100%;
-    height: 500px;
-}
-
-.headin {
-    margin-top: 0%;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    font-size: 54px;
-}
-
-.div-2 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.multi-pic {
-    height: 330px;
-    width: 350px;
-    background-color: rgb(50, 11, 87);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.adi2 {
-    height: 60px;
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.pic-text {
-    display: flex;
-    margin-left: 20px;
-}
-
-.pic-text>p {
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.pic-align1 {
-    width: 150px;
-    margin: 15px;
-}
-
-.sm-pic {
-    height: 80px;
-    margin-top: 10px;
-}
-
-.align {
-    display: flex;
-}
-
-.pic-align2 {
-    display: block;
-}
-
-.md-pic {
-    width: 160px;
-    height: 140px;
-    margin-top: 10px;
-}
-
-.bg-3 {
-    background-color: rgb(2, 3, 23);
-    width: 100%;
-    height: 500px;
-}
-
-.buy-and-sell {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cardbs {
-    background: rgb(105, 48, 136);
-    background: linear-gradient(126deg, rgba(105, 48, 136, 1) 39%, rgba(72, 0, 130, 1) 100%);
-    height: 200px;
-    width: 250px;
-    border-radius: 10px;
-    margin: 0px 40px 0px 40px;
-}
-
-.BS-responsive {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.div-up {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.div-up>p {
-    color: white;
-    font-size: 25px;
-}
-.headinnn{
-    color: white;
-    font-size: 20px;
-}
-.tt-im{
-    width: 100%;
-    transition: all .7s ease;
-}
-.wrraper-content{
-    background: rgb(105, 48, 136);
-    background: linear-gradient(126deg, rgba(105, 48, 136, 1) 39%, rgba(72, 0, 130, 1) 100%);
-    position:absolute;
-    height: 150px;
-    width: 300px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 160px;
-}
-.wrraper-content>p{
-    color: white;
-    font-size: 20px; 
-    margin-left: 10px;
-    cursor: pointer;
-}
-.footer{
-    background-color: rgb(26, 2, 29);
-    height: 300px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.f-im{
-    height: 50px;
-}
-.part-1{
-    width: 400px;
-}
-.part-1t{
-    font-size: 20px;
-    color: white;
-    margin-left: 25px;
-    margin-top: 0%;
-}
-.part1-im>img{
+.link-btn {
+    margin-top: 20px;
+    padding: 0px 15px 0px 15px;
     height: 40px;
-    margin-left: 20px;
-    transition: all .5s ease;
+    background-color: white;
+    color: #69503d;
+    border-radius: 5px;
+    border: 2px solid #69503d;
+    /* transition:btn all.3s ease; */
 }
-.part-2>p{
+
+.link-btn:active {
     color: white;
-    font-size: 20px;
-    line-height: 10%;
-    transition: all .3s ease;
+    background-color: #69503d;
 }
-.part-2>p:hover{
-    color: rgb(204, 2, 204);
+
+.body-stuff2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
 }
-.part-3>p{
-    color: white;
-    font-size: 20px;
-    line-height: 10%;
-    transition: all .3s ease;
-}
-.part-3>p:hover{
-    color: rgb(204, 2, 204);
-}
-.formm{
-    background-color: blueviolet;
-    height: 30px;
+
+.styling {
+    height: 300px;
     width: 200px;
-    border-radius: 10px;
-    border-color: white;
-    border-width: 5px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border: 10px solid #69503d;
+    position: absolute;
 }
-.part-4{
-    font-size:20px;
+
+.img-2 {
+    margin-top: 40px;
+    height: 300px;
+    position: relative;
+}
+
+.img-3 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    height: 300px;
+}
+
+.text-btn {
+    margin-left: 20px;
+    width: 400px;
+    color: rgb(143, 143, 143);
+
+}
+
+.text-about-us {
+    color: rgb(226, 199, 62);
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+
+.read {
+    margin-top: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #69503d;
     color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download {
+    margin-top: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: rgb(226, 199, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 
 }
 
-
-@media only screen and (max-width:1100px) {
-    .items-alignment {
-        height: 1150px;
+@media only screen and (max-width:900px) {
+    .body-stuff2 {
         display: block;
-        padding-top: 10px;
-    }
-
-    .d-2 {
-        margin-top: 50px;
-        justify-content: center;
-    }
-
-    .items-card {
-        width: 400px;
-        height: 500px;
-    }
-
-    .it-im {
-        width: 300px;
-        margin-left: 50px;
-    }
-
-    .div-2 {
-        display: block;
-
-
-    }
-
-    .bg-2 {
-        background-color: rgb(2, 3, 23);
-        width: 100%;
-        height: 1200px;
-    }
-
-    .multi-pic {
-        margin-top: 30px;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-}
-
-@media only screen and (max-width:950px) {
-    .nav-content {
-        height: 70px;
-        width: 700px;
-    }
-
-    .nav-mobile {
-        display: none;
-    }
-
-    .headin3 {
-        color: rgb(255, 255, 255);
-        font-size: 45px;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-        margin-top: 0%;
-    }
-
-    .mid-content {
-        display: block;
-        margin-left: 0%;
-    }
-
-    .about-nft {
-        height: 1100px;
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 90px;
-    }
-
-    .card1 {
-        width: 550px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
-    }
-
-    .items-alignment {
-        height: 1000px;
-        display: block;
-        padding-top: 10px;
-    }
-
-    .d-2 {
-        margin-top: 50px;
-        justify-content: center;
-    }
-
-    .items-card {
-        width: 300px;
-        height: 400px;
-    }
-
-    .it-im {
-        width: 200px;
-        margin-left: 30px;
-    }
-    .footer{
-        background-color: rgb(26, 2, 29);
-        height:700px;
-        padding-top: 30px;
-        display: block;
-    }
-    .part-1{
-        margin-top: 40px;
-        text-align: center;
-    }
-    .part-2{
-        margin-top: 40px;
-        text-align: center;
-    }.part-3{
-        margin-top: 40px;
-        text-align: center;
-    }
-    .part-4{
-        margin-top: 40px;
-        text-align: center;
-    }
-    
-}
-
-@media only screen and (max-width:980px) {
-    .bg-img {
-        background-image: url(imaes/bg-img-1200.jpg);
-    }
-
-    #t-content {
-        font-size: 50px;
-        margin-left: 50%;
-        display: flex;
-        justify-content: left;
-    }
-
-    .nav-mobile {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:750px) {
-    .bg-img {
-        background-image: url(imaes/bg-img-11000.jpg);
-    }
-
-    #t-content {
-        line-height: 0cm;
-        font-size: 40px;
-        margin-left: 4%;
-        display: flex;
-        justify-content: left;
-        color: rgb(241, 241, 241);
-    }
-
-    .b-600 {
-        display: flex;
-    }
-
-    .wallet {
-        margin-left: 35%;
-    }
-
-    .for-mobile {
-        display: none;
-    }
-
-    #p1 {
-        font-size: 30px;
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 90px;
-    }
-
-    .card1 {
-        width: 450px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
+        margin-left: 25%;
     }
 }
 
 @media only screen and (max-width:600px) {
-    .nav-content {
-        display: none;
+    .body-stuff2 {
+        margin-left: 15%;
     }
 
-    .for-mobile {
-        display: block;
-    }
-
-    .nav-mobile {
-        height: 80px;
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .l-f-m {
-        padding-left: 20px;
-        height: 60px;
-    }
-
-    .btn {
-        padding-top: 13px;
-        height: 50px;
-        padding-right: 10px;
-    }
-
-    .headin3 {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-family: Georgia, Times, 'Times New Roman', serif;
-        margin-top: 0%;
-    }
-
-    .mid-content {
-        display: block;
-        margin-left: 5%;
-    }
-
-    .about-nft {
-        height: 1200px;
-    }
-
-    #p1 {
-        font-size: 20px;
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 90px;
-    }
-
-    .card1 {
-        width: 350px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
-    }
-
-    .items-alignment {
-        height: 1900px;
-        display: block;
-        padding-top: 10px;
-    }
-
-    .d-2 {
-        display: block;
-        margin-top: 50px;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .items-card {
-        width: 400px;
-        height: 450px;
-        margin-top: 20px;
-    }
-
-    .it-im {
-        width: 270px;
-        margin-left: 50px;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    .about-nft {
-        height: 800px;
-        background-image: url(imaes/400.jpg);
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 90px;
-    }
-
-    .card1 {
-        width: 250px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
-    }
-
-    .card-text {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    .items-alignment {
-        height: 1550px;
-        display: block;
-        padding-top: 10px;
-    }
-
-    .d-2 {
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .items-card {
-        width: 300px;
-        height: 350px;
-    }
-
-    .it-im {
-        width: 150px;
-        margin-left: 80px;
-    }
-
-}
-
-@media only screen and (max-width:400px) {
-    .bg-img {
-        background-image: url(imaes/oku.jpg);
-    }
-
-    #p1 {
-        font-size: 15px;
-    }
-
-    #div2w {
-        width: 200px;
-    }
-
-    .about-nft {
-        height: 500px;
-        background-image: url(imaes/400.jpg);
-    }
-
-    .wallet {
-        margin-left: 20%;
-        width: 150px;
-        height: 30px;
-    }
-
-    .wallet-im {
-        height: 10px;
-    }
-
-    .wallet-im2 {
-        height: 10px;
-    }
-
-    .wallet-box {
-        height: 20px;
-        width: 100px;
-    }
-
-    #t-content {
-        font-size: 20px;
-    }
-
-    .nav-mobile {
-        height: 30px;
-    }
-
-    .l-f-m {
-        padding-top: 10px;
-        height: 20px;
-    }
-
-    .btn {
-        height: 20px;
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 5%;
-    }
-
-    .card1 {
-        width: 250px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
-    }
-
-    .card-text {
-        font-size: 15px;
-    }
-
-}
-
-@media only screen and (max-width:340px) {
-    .headin3 {
-        font-size: 20px;
-        margin-top: 0%;
-    }
-
-    .card-alignment {
-        display: block;
-        margin-left: 20px;
-    }
-
-    .card1 {
-        width: 250px;
-
-    }
-
-    .cards {
-        background: rgb(82, 0, 255);
-        background: linear-gradient(0deg, rgb(6, 0, 90) 0%, rgba(9, 26, 121, 1) 50%, rgb(0, 1, 48) 100%);
-        height: 640px;
-        padding-top: 10px;
-    }
-
-    .card1:hover {
-        border-color: white;
-    }
-
-    .card-text {
-        font-size: 10px;
-    }
-
-    .items-alignment {
-        height: 1550px;
-        display: block;
-        padding-top: 10px;
-    }
-
-    .d-2 {
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .items-card {
-        width: 200px;
-        height: 350px;
-    }
-
-    .it-im {
-        width: 150px;
-        margin-left: 20px;
+    .body-content {
+        padding: 7%;
     }
 
 }
